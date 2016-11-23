@@ -5,7 +5,7 @@
       "name": "Launch",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}\\build\\app\\app.js",
+      "program": "${workspaceRoot}\\src\\app\\app.ts",
       "stopOnEntry": false,
       "args": [],
       "cwd": "${workspaceRoot}",
@@ -19,7 +19,9 @@
       },
       "externalConsole": false,
       "sourceMaps": true,
-      "outDir": null
+      "outFiles": [
+        "${workspaceRoot}\\build\\**\\*.js"
+      ]
     },
     {
       "name": "Attach",
